@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* header start  */
+.head{
+    background-color: rgb(19, 131, 93);
+}
+#image-container {
+    width: 8rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  header{
+    padding: 2rem;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+  }
+  header h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .con{
+    width: 45%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+  }
+  .con input{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 65%;
+  }
+  .con input:focus {
+    outline: none;
+    border: none;
+  }
+  .con a{
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: rgb(32, 32, 32);
+    height: 2.7rem;
+    font-family: 'Poppins', sans-serif;
+    width: 35%;
+  }
+  .con a:hover{
+    background-color: black;
+  }
+  #comment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+  /* header section media queries  */
+@media screen and (max-width:1200px){
+    .con{
+        width: 70%;
+        height: 8rem;
+        flex-direction: column;
+      }
+      .con a{
+        height: 50%;
+        width: 90%;
+      }
+      .con input{
+        height: 50%;
+        width: 90%;
+      }
+}
+@media screen and (max-width:1085px){
+    header h1{
+        font-size: 2.5rem;
+      }
+      header p{
+        font-size: 1rem;
+      }
+}
+@media screen and (max-width:625px){
+    header h1{
+        font-size: 1.8rem;
+      }
+      header p{
+        font-size: .9rem;
+      }
+}
+@media screen and (max-width:600px){
+    header h1{
+        font-size: 1.5rem;
+      }
+      .con{
+        width: 90%;
+      }
+}
+/* header ends  */
+
+/* section starts  */
+section {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+.image img{
+    width: 65%;
+    height: 90%;
+}
+
+.logos{
+    display: flex;
+    height: 45vh;
+    background-color: rgb(255, 255, 255);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.logos .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 90%;
+    width: 23%;
+    background-color: white;
+}
+.box span{
+    color: rgb(19, 131, 93);
+    font-size: 2.5rem;
+}
+@media screen and (max-width:760px) {
+    .image img{
+        width: 70%;
+        height: 60%;
+    } 
+}
+@media screen and (max-width:700px) {
+    .image img{
+        width: 70%;
+        height: 60%;
+    } 
+    .logos .box{
+        width: 90%;
+    }
+    .logos{
+        height: 95%;
+        flex-direction: column;
+    }
+}
+/* section ends  */
+
+
+/* footer start  */
+.line{
+    border: .5px solid rgb(92, 92, 92);
+    margin: 9rem auto auto auto;
+    width: 70%;
+    height: 0px;
+}
+
+  footer{
+    margin: 2rem auto auto auto;
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+  }
+  footer h1{
+    font-size: 1.5rem;
+  }
+  footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    height: 19%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(19, 131, 93);
+  }
+  footer a:hover{
+    background-color: rgb(12, 114, 80);
+  }
+  @media  screen and (max-width:1160px) {
+    footer a{
+        width: 28%;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+  }
+  @media  screen and (max-width:766px) {
+    footer a{
+        height: 15%;
+        width: 50%;
+        padding: .8rem;
+        font-size: 1rem;
+    }
+    footer h1{
+        font-size: 1.1rem;
+      }
+  }
+  @media  screen and (max-width:430px) {
+    footer a{
+        height: 15%;
+        width:65%;
+        padding: .8rem;
+        font-size: 1.1rem;
+    }
+    footer h1{
+        font-size: .9rem;
+      }
+  }
+  @media  screen and (max-width:286px) {
+    footer a{
+        height: 14%;
+        width:75%;
+        padding: .8rem;
+        font-size: .9rem;
+    }
+  }
+
+  /* footer ends  */
